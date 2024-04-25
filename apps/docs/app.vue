@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Page } from "ui";
 import { name } from "./package.json";
 
 useHead({
@@ -9,5 +8,9 @@ useHead({
 </script>
 
 <template>
-  <Page :app-name="name" />
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
